@@ -1,5 +1,9 @@
+import { RouterProvider } from "react-router-dom";
+
+import router from "./router.js";
+
 function App() {
-  return <div className="App text-3xl font-bold underline">DSE</div>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
