@@ -1,3 +1,10 @@
+import Header from "../../shared/components/Header/index.js";
+
 export default function Home() {
-  return <div>HOME</div>;
+  return (
+    <>
+      <Header />
+      <div>HOME</div>
+    </>
+  );
 }

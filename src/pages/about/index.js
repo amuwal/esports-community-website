@@ -1,3 +1,10 @@
+import Header from "../../shared/components/Header";
+
 export default function About() {
-  return <div>About</div>;
+  return (
+    <>
+      <Header />
+      <div>about</div>
+    </>
+  );
 }
