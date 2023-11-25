@@ -1,4 +1,5 @@
 import Header from "../../shared/components/Header/index.js";
+import Events from "./components/events.js";
 import Stats from "./components/stats.js";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Header />
       <Stats />
+      <Events />
     </>
   );
 }
