@@ -32,7 +32,7 @@ const HeaderButton = styled.button`
   text-transform: uppercase;
 
   &:hover {
-    scale: 102%;
+    scale: 104%;
   }
 `;
 

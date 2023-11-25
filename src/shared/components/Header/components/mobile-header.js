@@ -62,7 +62,7 @@ const SidebarButton = styled.button`
   text-transform: uppercase;
 
   &:hover {
-    scale: 102%;
+    scale: 104%;
   }
 `;
 
@@ -86,7 +86,7 @@ export default function MobileHeader() {
             open
           </div>
         </div>
-        <Sidebar sidebaractive={sidebarActive ? true : undefined}>
+        <Sidebar sidebaractive={sidebarActive ? "true" : undefined}>
           <SidebarCloseButton
             onClick={() => {
               setSidebarActive(!sidebarActive);
