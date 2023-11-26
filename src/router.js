@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Home from "./pages/home/index.js";
 import About from "./pages/about/index.js";
-import Events from "./pages/events/index.js";
+import Tournaments from "./pages/tournaments/index.js";
 import Contact from "./pages/contact/index.js";
 import ErrorPage from "./pages/error/index.js";
 
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
     Component: About,
   },
   {
-    path: "/events",
-    Component: Events,
+    path: "/tournaments",
+    Component: Tournaments,
   },
   {
     path: "/contact",

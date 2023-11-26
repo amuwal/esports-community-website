@@ -104,8 +104,8 @@ export default function MobileHeader() {
 
           <div className="w-full pl-[5px] flex flex-col">
             <SidebarLink to={"/"}>home</SidebarLink>
+            <SidebarLink to={"/tournaments"}>tournaments</SidebarLink>
             <SidebarLink to={"/about"}>about</SidebarLink>
-            <SidebarLink to={"/events"}>events</SidebarLink>
             <SidebarLink to={"/contact"}>contact</SidebarLink>
           </div>
 

@@ -52,7 +52,7 @@ export default function Footer() {
         <div className=" text-white font-bold uppercase text-[18px]">pages</div>
         <div className="flex flex-col gap-[20px] text-white uppercase">
           <Link to={"/home"}>home</Link>
-          <Link to={"/events"}>events</Link>
+          <Link to={"/tournaments"}>tournaments</Link>
           <Link to={"/about"}>about</Link>
           <Link to={"/contact"}>contact</Link>
         </div>
