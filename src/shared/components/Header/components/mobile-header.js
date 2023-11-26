@@ -4,9 +4,10 @@ import styled from "styled-components";
 
 const Sidebar = styled.div`
   position: fixed;
+  z-index: 5;
   right: ${(props) => (props.sidebaractive ? "0" : "-100%")};
   width: 380px;
-  height: 100%;
+  height: 100vh;
   background-color: #333;
   transition: all 0.3s ease;
   display: flex;
