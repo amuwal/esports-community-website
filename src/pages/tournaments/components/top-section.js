@@ -16,17 +16,17 @@ export default function TopSection() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col items-center px-[20px]">
       <div className="text-white flex flex-col gap-[5px] font-bold text-[30px] mt-[70px] mb-[90px] text-center">
         <div>Scrims and Tournaments</div>
         <div className="text-sm font-normal text-gray-300">
-          Practice and Participate in Tournaments 
+          Practice and Participate in Tournaments
         </div>
       </div>
-      <div className=" flex justify-center w-full gap-[30px]">
+      <div className="flex flex-col items-center sm:flex-row justify-center w-full gap-[30px]">
         {scrims.map((scrim) => {
           return (
-            <Scrim>
+            <Scrim key={scrim.title}>
               <div className="w-full h-[65%]">
                 <img
                   className="h-full w-full rounded-tr-[16px] rounded-tl-[16px] object-cover"
@@ -55,6 +55,7 @@ const Scrim = styled.div`
   justify-content: center;
   border-radius: 16px;
   width: 350px;
+  max-width: 85vw;
   aspect-ratio: 1.3/1;
   background-color: #282828;
 `;
