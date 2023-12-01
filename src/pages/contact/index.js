@@ -3,14 +3,19 @@ import Header from "../../shared/components/Header/index.js";
 import ContactForm from "./components/contact-form.js";
 import styled from "styled-components";
 import ContactInfo from "./components/contact-info.js";
+
+const onSubmit = async (formData) => {
+  console.log(formData);
+};
+
 export default function Contact() {
   return (
     <>
       <Header />
       <TopSection>get in touch</TopSection>
       <MidSection>
+        <ContactForm onSubmit={onSubmit} />
         <ContactInfo />
-        <ContactForm />
       </MidSection>
       <Footer />
     </>
@@ -30,8 +35,9 @@ const TopSection = styled.div`
 
 const MidSection = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 80px;
-  justify-content: space-evenly;
   align-items: center;
   gap: 40px;
 `;
