@@ -15,8 +15,8 @@ export default function Events() {
 
   return (
     <>
-      <div className="mt-[50px] my-[30px] text-center">
-        <div className=" events-heading text-[25px] text-center text-white uppercase font-bold">
+      <div className="my-[100px] text-center">
+        <div className=" events-heading text-[36px] text-center text-white uppercase font-extrabold">
           Events
         </div>
         <div className="events-heading text-[12px] text-center text-gray-400 font-bold uppercase">

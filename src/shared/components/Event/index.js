@@ -3,44 +3,65 @@ import styled from "styled-components";
 export default function Event({ event }) {
   return (
     <EventWrapper key={event.eventName}>
-      <div className="h-[50%] w-full flex items-center gap-[25px] border-b-[1px]">
+      <div className="h-[40%] w-full flex items-center gap-[25px]">
         <img
-          className="w-[100px] min-[320px]:w-[100px] min-[400px]:w-[120px]  md:w-[120px] h-[auto] transition-all hover:scale-105"
+          className="w-[100px] min-[400px]:w-[100px] md:w-[120px] h-[auto] transition-all hover:scale-105"
           src={event.eventLogo}
           alt={event.eventName}
         />
-        <div className="text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold flex justify-center items-center flex-grow">
-          {event.eventName}
+        <div className="flex flex-col text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold justify-start flex-grow">
+          <div>{event.eventName}</div>
+          <div className="text-gray-400 text-[11px] flex gap-[10px]">
+            <img
+              src="https://assets-global.website-files.com/64c79ee268baad8314427a80/64c7e5e8eb70a956cf919be2_watch.svg"
+              alt="time"
+            />
+            <div>{event.date}</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative h-[25px] rounded-md bg-gray-600 flex items-center justify-center">
+        <div className="absolute left-2 top-1/2 -translate-y-1/2">
+          <img
+            src="https://assets-global.website-files.com/64c79ee268baad8314427a80/64c7ebf5a2b0471f6962c391_info.svg"
+            alt="Info"
+          />
+        </div>
+        <div className="text-[12px] text-gray-300">
+          This tournament will be open soon
         </div>
       </div>
 
       <div className="h-[50%] flex flex-col items-center justify-evenly">
         <div className="flex w-full justify-evenly">
-          <div className=" text-white text-[24px] font-bold uppercase flex flex-col items-center gap-[20px]">
-            <div className="text-[12px]">
-              <img
-                className="h-[40px] aspect-square"
-                src="https://store-images.s-microsoft.com/image/apps.61549.13695741898563888.a55c84af-2860-4662-8505-864b03df8b0d.88ae2bb4-e5dc-4d8a-8f90-c855ff00754d"
-                alt="time"
-              />
+          <div className="  flex flex-col items-center">
+            <div className="text-[18px] text-white font-bold uppercase">
+              {event.teams}
             </div>
-            <p className="text-[12px]">{event.date}</p>
-          </div>
-          <div className="text-white text-[24px] font-bold uppercase flex flex-col items-center">
-            <p className="text-[12px] h-[40px] aspect-square flex items-center justify-center">
-              Prizepool
-            </p>
-            <p>{event.prizepool}</p>
-          </div>
-          <div className="text-white text-[17px] font-bold uppercase flex flex-col items-center gap-[20px]">
-            <div className=" text-[12px] h-[40px] aspect-square flex items-center justify-center">
-              Slots
+            <div className="text-[11px] text-gray-300 font-bold uppercase">
+              Teams
             </div>
-            <div className=" text-[12px]">{event.teams}</div>
+          </div>
+          <div className="  flex flex-col items-center">
+            <div className="text-[18px] text-white font-bold uppercase">
+              {event.prizepool}
+            </div>
+            <div className="text-[11px] text-gray-300 font-bold uppercase">
+              Prize Pool
+            </div>
+          </div>
+          <div className="  flex flex-col items-center">
+            <div className="text-[18px] text-white font-bold uppercase">
+              {event.stages || 6}
+            </div>
+            <div className="text-[11px] text-gray-300 font-bold uppercase">
+              Stages
+            </div>
           </div>
         </div>
         <div className="w-full">
-          <WatchButton>watch</WatchButton>
+          <WatchButton>Go To Event</WatchButton>
         </div>
         <Tag tag={event.type}>
           {["ongoing", "upcoming"].includes(event.type) ? event.type : ""}{" "}
@@ -54,6 +75,7 @@ const EventWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 1px solid gray;
   border-radius: 10px;
   aspect-ratio: 1/1.2;
@@ -81,14 +103,18 @@ const WatchButton = styled.div`
   align-items: center;
   justify-content: center;
   padding: 8px 0;
-  color: white;
+  color: black;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 15px;
-  background-color: #5d6af2;
-  border-radius: 8px;
+  background-color: white;
+  border-radius: 10px;
   transition: all 0.2s;
 
   &:hover {
     scale: 102%;
+    -webkit-box-shadow: -2px 4px 4px 0px rgba(1, 220, 254, 1);
+    -moz-box-shadow: -2px 4px 4px 0px rgba(1, 220, 254, 1);
+    box-shadow: -2px 4px 4px 0px rgba(1, 220, 254, 1);
   }
 `;
