@@ -83,6 +83,10 @@ const ContactInput = styled.input`
   border: 2px solid black;
   padding: 10px 12px;
   border-radius: 8px;
+
+  &::placeholder {
+    color: blue;
+  }
 `;
 
 const SubmitButton = styled.button`
@@ -104,4 +108,7 @@ const ContactTextarea = styled.textarea`
   border: 2px solid black;
   padding: 10px 12px;
   border-radius: 8px;
+  &::placeholder {
+    color: blue;
+  } 
 `;
