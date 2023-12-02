@@ -23,7 +23,7 @@ export default function Achievements() {
             >
               <div className="h-[60%]">
                 <div className="text-[36px] font-extrabold text-white">
-                  {achievement.number}
+                  {achievement.number}+
                 </div>
               </div>
               <div className="h-[40%] flex justify-between items-center">
