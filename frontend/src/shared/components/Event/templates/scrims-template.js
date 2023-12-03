@@ -45,7 +45,9 @@ export default function ScrimsTemplate({ event }) {
           </div>
         </div>
         <div className="w-full">
-          <WatchButton to={"/events/" + event._id}>More Details</WatchButton>
+          <WatchButton to={"/events/regular/" + event._id}>
+            More Details
+          </WatchButton>
         </div>
         <Tag tag={event.type}>
           {["ongoing", "upcoming"].includes(event.type) ? event.type : ""}{" "}

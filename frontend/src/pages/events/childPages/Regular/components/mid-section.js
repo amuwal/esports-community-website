@@ -5,35 +5,26 @@ export default function MidSection({ event }) {
   return (
     <>
       <div className="my-[150px] px-[20px] lg:px-[80px] flex flex-col gap-[40px]">
-        <div className="grid grid-cols-2 lg:grid-cols-4 rounded-xl bg-[white]">
-          <div className="border-r-[3px] border-b-[3px] border-b-[#05152f] border-r-[#05152f] flex items-center justify-center h-[100px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 rounded-xl bg-[white]">
+          <div className="border-r-[3px] border-b-[3px] border-b-[#05152f] border-r-[#05152f] rounded-tr-xl flex items-center justify-center h-[100px]">
             <div className="flex flex-col items-center justify-center ">
               <div className="font-extrabold text-[20px] uppercase">
-                {event.teams}
+                {event.roomType || "Advanced"}
               </div>
-              <div className="uppercase text-[11px] font-bold">Teams</div>
-            </div>
-          </div>
-
-          <div className="border-r-[3px] border-b-[3px] border-b-[#05152f] border-r-[#05152f] rounded-tr-xl flex items-center justify-center h-[100px]">
-            <div className="flex flex-col items-center justify-center">
-              <div className="font-extrabold text-[20px] uppercase">
-                {event.prizepool}
-              </div>
-              <div className="uppercase text-[11px] font-bold">prize pool</div>
+              <div className="uppercase text-[11px] font-bold">Room</div>
             </div>
           </div>
 
           <div className="border-r-[3px] border-b-[3px] border-b-[#05152f] border-r-[#05152f] flex items-center justify-center h-[100px]">
             <div className="flex flex-col items-center justify-center">
               <div className="font-extrabold text-[20px] uppercase">
-                {event.stages || 6}
+                {event.entryFee || "Free"}
               </div>
-              <div className="uppercase text-[11px] font-bold">Stages</div>
+              <div className="uppercase text-[11px] font-bold">Entry</div>
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-[10px] rounded-br-xl border-r-[3px] border-r-[#05152f] border-b-[3px] border-b-[#05152f]">
+          <div className="flex items-center justify-center rounded-br-xl gap-[10px] border-r-[3px] border-r-[#05152f] border-b-[3px] border-b-[#05152f] h-[100px]">
             <a href="">
               <FaInstagram size={"25px"} />
             </a>

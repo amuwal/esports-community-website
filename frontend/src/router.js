@@ -6,6 +6,7 @@ import Events from "./pages/events/index.js";
 import Contact from "./pages/contact/index.js";
 import ErrorPage from "./pages/error/index.js";
 import EventDetails from "./pages/events/childPages/EventDetails/index.js";
+import RegularEventDetails from "./pages/events/childPages/Regular/index.js";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/events/:event_id",
     element: <EventDetails />,
+  },
+  {
+    path: "/events/regular/:event_id",
+    element: <RegularEventDetails />,
   },
   {
     path: "/contact",

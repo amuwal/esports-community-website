@@ -10,7 +10,8 @@ export const getStats = async () => {
 const events = [
   {
     _id: "1",
-    eventLogo: "https://1.bp.blogspot.com/-OnqZ9O7FnQo/YO0BzTAb0EI/AAAAAAAAA8w/8r6h_NwNnlM_oy7FbPZsfPwj8VR6ih5XgCLcBGAsYHQ/s1280/Pubg%2Bthumbnail%2Bby%2Bsorif%2B%252820%2529.png",
+    eventLogo:
+      "https://1.bp.blogspot.com/-OnqZ9O7FnQo/YO0BzTAb0EI/AAAAAAAAA8w/8r6h_NwNnlM_oy7FbPZsfPwj8VR6ih5XgCLcBGAsYHQ/s1280/Pubg%2Bthumbnail%2Bby%2Bsorif%2B%252820%2529.png",
     eventName: "Tier-2 Scrims",
     type: "past",
     date: "Sept 2021",
@@ -32,10 +33,11 @@ const events = [
     _id: "3",
     eventLogo: "/event-logo-3.png",
     eventName: "India Campus Championship",
-    type: "past",
+    type: "ongoing",
     date: "Sept 2022",
     teams: 1000,
-    prizepool: "₹ 1,00,000",
+    prizepool: "₹ 20,000",
+    tags: ["ongoing"],
   },
   {
     _id: "4",
