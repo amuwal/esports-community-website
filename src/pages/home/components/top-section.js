@@ -4,11 +4,11 @@ export default function TopSection() {
   return (
     <>
       <div className="h-[90vh] relative">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#05152f] via-transparent to-[#05152f]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#05152f] via-transparent to-[#05152f]"></div>
         <img
           src="https://wallpapercave.com/wp/wp4390615.jpg"
           alt="Main"
-          class="w-full h-full object-cover "
+          className="w-full h-full object-cover "
         />
 
         <div className="absolute inset-0 flex justify-center items-center  left-1/2 -translate-x-1/2 top-1/2 transform -translate-y-1/2  max-w-[85vw] lg:w-[70%]">

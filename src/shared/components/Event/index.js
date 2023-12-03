@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Event({ event }) {
@@ -61,7 +62,9 @@ export default function Event({ event }) {
           </div>
         </div>
         <div className="w-full">
-          <WatchButton>Go To Event</WatchButton>
+          <WatchButton to={"/tournaments/" + event._id}>
+            Go To Event
+          </WatchButton>
         </div>
         <Tag tag={event.type}>
           {["ongoing", "upcoming"].includes(event.type) ? event.type : ""}{" "}
@@ -96,7 +99,7 @@ const Tag = styled.div`
   font-weight: bolder;
 `;
 
-const WatchButton = styled.div`
+const WatchButton = styled(Link)`
   cursor: pointer;
   width: 100%;
   display: flex;
