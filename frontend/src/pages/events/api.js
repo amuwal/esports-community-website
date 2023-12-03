@@ -10,12 +10,13 @@ export const getStats = async () => {
 const events = [
   {
     _id: "1",
-    eventLogo: "/event-logo-1.png",
-    eventName: "Rising Champions League",
+    eventLogo: "https://1.bp.blogspot.com/-OnqZ9O7FnQo/YO0BzTAb0EI/AAAAAAAAA8w/8r6h_NwNnlM_oy7FbPZsfPwj8VR6ih5XgCLcBGAsYHQ/s1280/Pubg%2Bthumbnail%2Bby%2Bsorif%2B%252820%2529.png",
+    eventName: "Tier-2 Scrims",
     type: "past",
     date: "Sept 2021",
     teams: 1000,
     prizepool: "₹ 1,00,000",
+    template: "2",
   },
   {
     _id: "2",

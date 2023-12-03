@@ -17,7 +17,7 @@ export default function TopSection() {
   ];
   return (
     <div className="w-full flex flex-col items-center px-[20px]">
-      <div className="text-white flex flex-col gap-[5px] font-bold text-[30px] mt-[70px] mb-[90px] text-center">
+      <div className="text-white flex flex-col gap-[5px] font-extrabold uppercase text-[40px] mt-[100px] mb-[90px] text-center">
         <div>Scrims and Tournaments</div>
         <div className="text-sm font-normal text-gray-300">
           Practice and Participate in Tournaments
