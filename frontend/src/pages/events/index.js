@@ -3,7 +3,8 @@ import Header from "../../shared/components/Header/index.js";
 import FeaturedSection from "./components/featured-section.js";
 import PastEventsSection from "./components/past-events.js";
 import TopSection from "./components/top-section.js";
-export default function Tournaments() {
+
+export default function Events() {
   return (
     <>
       <Header />

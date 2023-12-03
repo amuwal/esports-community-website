@@ -62,7 +62,7 @@ export default function Event({ event }) {
           </div>
         </div>
         <div className="w-full">
-          <WatchButton to={"/tournaments/" + event._id}>
+          <WatchButton to={"/events/" + event._id}>
             Go To Event
           </WatchButton>
         </div>

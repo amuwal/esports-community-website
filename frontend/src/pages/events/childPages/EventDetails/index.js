@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getEventById } from "../../api";
+import { getEventById } from "../../api.js";
 import TopSection from "./components/top-section";
 import Header from "../../../../shared/components/Header";
 import Footer from "../../../../shared/components/Footer";

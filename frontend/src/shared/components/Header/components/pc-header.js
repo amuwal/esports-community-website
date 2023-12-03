@@ -49,8 +49,8 @@ export default function PcHeader() {
           <HeaderLink to={"/"} isactive={useMatch("/")}>
             home
           </HeaderLink>
-          <HeaderLink to={"/tournaments"} isactive={useMatch("/tournaments")}>
-            tournaments
+          <HeaderLink to={"/events"} isactive={useMatch("/tournaments")}>
+            events
           </HeaderLink>
           <HeaderLink to={"/about"} isactive={useMatch("/about")}>
             about
