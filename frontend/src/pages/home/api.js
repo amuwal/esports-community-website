@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const getStats = async () => {
   return [
     { name: "members", number: 75000 },
@@ -75,6 +77,17 @@ const events = [
   },
 ];
 
+console.log(process.env);
+
 export const getEvents = async () => {
-  return events;
+  try {
+    const response = await axios.get(
+      `${process.env.REACT_APP_API_BASE_URL}/events/homepage-events`
+    );
+    console.log("response from getEvents:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching events:", error);
+    throw error; // Propagate the error for handling in the calling component
+  }
 };

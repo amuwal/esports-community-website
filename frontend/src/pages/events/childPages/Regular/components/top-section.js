@@ -3,7 +3,7 @@ export default function TopSection({ event }) {
     <>
       <div className="flex flex-col gap-[20px] items-center justify-center my-[60px] uppercase">
         <div className="text-white text-center text-[40px] md:text-[50px] lg:text-[70px] font-extrabold">
-          {event.eventName}
+          {event.title}
         </div>
         <div className="flex items-center justify-center w-[90vw] md:w-[500px] lg:w-[40%]">
           <div>

@@ -1,5 +1,5 @@
 import express from "express";
-import Team from "./path-to-your-team-model"; // Update the path accordingly
+import Team from "../db/models/Team.js";
 
 const router = express.Router();
 

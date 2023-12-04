@@ -3,21 +3,21 @@ import styled from "styled-components";
 
 export default function DefaultTemplate({ event }) {
   return (
-    <EventWrapper key={event.eventName}>
+    <EventWrapper key={event.title}>
       <div className="h-[40%] w-full flex items-center gap-[25px]">
         <img
           className="w-[100px] min-[400px]:w-[100px] md:w-[120px] h-[auto] transition-all hover:scale-105"
-          src={event.eventLogo}
-          alt={event.eventName}
+          src={event.titleImage}
+          alt={event.title}
         />
         <div className="flex flex-col text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold justify-start flex-grow">
-          <div>{event.eventName}</div>
+          <div>{event.title}</div>
           <div className="text-gray-400 text-[11px] flex gap-[10px]">
             <img
               src="https://assets-global.website-files.com/64c79ee268baad8314427a80/64c7e5e8eb70a956cf919be2_watch.svg"
               alt="time"
             />
-            <div>{event.date}</div>
+            <div>{event.time}</div>
           </div>
         </div>
       </div>
@@ -62,11 +62,9 @@ export default function DefaultTemplate({ event }) {
           </div>
         </div>
         <div className="w-full">
-          <WatchButton to={"/events/" + event._id}>
-            Go To Event
-          </WatchButton>
+          <WatchButton to={"/events/" + event._id}>Go To Event</WatchButton>
         </div>
-        <Tag tag={event.type}>
+        <Tag $tag={event.type}>
           {["ongoing", "upcoming"].includes(event.type) ? event.type : ""}{" "}
         </Tag>
       </div>

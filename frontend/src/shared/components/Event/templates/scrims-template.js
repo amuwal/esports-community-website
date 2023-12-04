@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 export default function ScrimsTemplate({ event }) {
   return (
-    <EventWrapper key={event.eventName}>
+    <EventWrapper key={event.title}>
       <div className="h-[40%] w-full flex flex-col items-center gap-[10px]">
         <img
           className="w-90% rounded-lg object-cover transition-all hover:scale-101"
-          src={event.eventLogo}
-          alt={event.eventName}
+          src={event.titleImage}
+          alt={event.title}
         />
         <div className="flex flex-col text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold justify-start flex-grow">
           <div className=" border-b-[3px] border-b-[#1defe9ff] border-dotted">
-            {event.eventName}
+            {event.title}
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function ScrimsTemplate({ event }) {
             More Details
           </WatchButton>
         </div>
-        <Tag tag={event.type}>
+        <Tag $tag={event.type}>
           {["ongoing", "upcoming"].includes(event.type) ? event.type : ""}{" "}
         </Tag>
       </div>

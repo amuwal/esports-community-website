@@ -21,7 +21,7 @@ const eventSchema = new mongoose.Schema({
     default: ["home"],
   },
   template: String,
-  image: String,
+  titleImage: String,
   title: String,
   time: String,
   entry: Number,

@@ -32,4 +32,21 @@ router.get("/eventpage-events", async (req, res) => {
   }
 });
 
+// Route to get an event by _id
+router.get("/:eventId", async (req, res) => {
+  try {
+    const { eventId } = req.params;
+    const event = await Event.findById(eventId);
+
+    if (!event) {
+      return res.status(404).json({ message: "Event not found" });
+    }
+
+    return res.status(200).json(event);
+  } catch (error) {
+    console.error("Error fetching event by _id:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
 export default router;

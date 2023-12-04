@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const getStats = async () => {
   return [
     { name: "members", number: 75000 },
@@ -82,8 +84,15 @@ export const getEvents = async () => {
   return events;
 };
 
-export const getEventById = async (event_id) => {
-  const index = events.findIndex((event) => event._id === event_id);
-  console.log(events[index], index);
-  return events[index];
+export const getEventById = async (eventId) => {
+  try {
+    const response = await axios.get(
+      `${process.env.REACT_APP_API_BASE_URL}/events/${eventId}`
+    );
+    console.log("Data in getEventById:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching event by _id (${eventId}):`, error);
+    return {};
+  }
 };
