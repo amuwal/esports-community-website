@@ -1,18 +1,6 @@
-import { getEvents } from "../api.js";
-import { useEffect, useState } from "react";
 import Event from "../../../shared/components/Event/index.js";
 
-export default function PastEventsSection() {
-  const [events, setEvents] = useState([]);
-
-  const populateEvents = async () => {
-    setEvents(await getEvents());
-  };
-
-  useEffect(() => {
-    populateEvents();
-  }, []);
-
+export default function PastEventsSection({ events }) {
   return (
     <>
       <div className="text-white font-extrabold uppercase text-[40px] my-[100px] mx-[30px] text-center">

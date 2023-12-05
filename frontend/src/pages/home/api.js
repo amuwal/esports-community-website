@@ -77,8 +77,6 @@ const events = [
   },
 ];
 
-console.log(process.env);
-
 export const getEvents = async () => {
   try {
     const response = await axios.get(
