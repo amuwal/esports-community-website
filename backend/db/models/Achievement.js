@@ -1,11 +1,6 @@
 import mongoose from "mongoose";
-import { nanoid } from "nanoid";
 
 const achievementSchema = new mongoose.Schema({
-  _id: {
-    type: String,
-    default: () => nanoid(12),
-  },
   sub_heading: {
     type: String,
   },
