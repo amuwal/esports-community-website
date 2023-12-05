@@ -5,7 +5,7 @@ import db from "./db/index.js";
 import adminRouter from "./admin.js";
 
 import eventsRoutes from "./Events/index.js";
-import teamsRoutes from "./Team/index.js";
+import commonRoutes from "./Common/index.js";
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 app.use("/admin", adminRouter);
 app.use("/events", eventsRoutes);
-app.use("/teams", teamsRoutes);
+app.use("/common", commonRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
