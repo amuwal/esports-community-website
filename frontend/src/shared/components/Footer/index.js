@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaInstagram, FaYoutube, FaDiscord } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal";
 import styled from "styled-components";
 
 const FooterWrapper = styled.div`
@@ -27,55 +28,59 @@ const FooterWrapper = styled.div`
 
 export default function Footer() {
   return (
-    <FooterWrapper>
-      <div className="flex flex-col gap-[70px] col-span-1 min-[500px]:col-span-2 sm:col-span-1">
-        <Link to={"/"}>
-          <img className="w-[100px] h-auto" src="/dse-logo.png" alt="DSE" />
-        </Link>
-        <div className="flex flex-col gap-[20px]">
-          <div className="text-white uppercase">join the community</div>
-          <div className="flex items-center text-white uppercase gap-[20px]">
-            <a href="https://instagram.com">
-              <FaInstagram size={"25px"} />
-            </a>
-            <a href="https://youtube.com">
-              <FaYoutube size={"25px"} />
-            </a>
-            <a href="https://discord.com">
-              <FaDiscord size={"25px"} />
-            </a>
+    <Fade>
+      <FooterWrapper>
+        <div className="flex flex-col gap-[70px] col-span-1 min-[500px]:col-span-2 sm:col-span-1">
+          <Link to={"/"}>
+            <img className="w-[100px] h-auto" src="/dse-logo.png" alt="DSE" />
+          </Link>
+          <div className="flex flex-col gap-[20px]">
+            <div className="text-white uppercase">join the community</div>
+            <div className="flex items-center text-white uppercase gap-[20px]">
+              <a href="https://instagram.com">
+                <FaInstagram size={"25px"} />
+              </a>
+              <a href="https://youtube.com">
+                <FaYoutube size={"25px"} />
+              </a>
+              <a href="https://discord.com">
+                <FaDiscord size={"25px"} />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex flex-col gap-[25px] pt-[25px]">
-        <div className=" text-white font-bold uppercase text-[18px]">pages</div>
-        <div className="flex flex-col gap-[20px] text-white uppercase">
-          <Link to={"/home"}>home</Link>
-          <Link to={"/events"}>tournaments</Link>
-          <Link to={"/about"}>about</Link>
-          <Link to={"/contact"}>contact</Link>
-          <Link to={"/blog"}>blog</Link>
+        <div className="flex flex-col gap-[25px] pt-[25px]">
+          <div className=" text-white font-bold uppercase text-[18px]">
+            pages
+          </div>
+          <div className="flex flex-col gap-[20px] text-white uppercase">
+            <Link to={"/home"}>home</Link>
+            <Link to={"/events"}>tournaments</Link>
+            <Link to={"/about"}>about</Link>
+            <Link to={"/contact"}>contact</Link>
+            <Link to={"/blog"}>blog</Link>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col gap-[20px] pt-[25px] min-w-[200px]">
-        <div className="text-white font-bold uppercase text-[18px]">
-          get in touch
+        <div className="flex flex-col gap-[20px] pt-[25px] min-w-[200px]">
+          <div className="text-white font-bold uppercase text-[18px]">
+            get in touch
+          </div>
+          <div>
+            <div className="text-white">Email</div>
+            <div className="text-white">darkesports.com</div>
+          </div>
+          <div>
+            <div className="text-white">phone</div>
+            <div className="text-white">00 (62) 632 867 4497</div>
+          </div>
+          <div>
+            <div className="text-white">Location</div>
+            <div className="text-white">Laputa land, Onigashima, 302333</div>
+          </div>
         </div>
-        <div>
-          <div className="text-white">Email</div>
-          <div className="text-white">darkesports.com</div>
-        </div>
-        <div>
-          <div className="text-white">phone</div>
-          <div className="text-white">00 (62) 632 867 4497</div>
-        </div>
-        <div>
-          <div className="text-white">Location</div>
-          <div className="text-white">Laputa land, Onigashima, 302333</div>
-        </div>
-      </div>
-    </FooterWrapper>
+      </FooterWrapper>
+    </Fade>
   );
 }

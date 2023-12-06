@@ -3,6 +3,7 @@ import Header from "../../shared/components/Header/index.js";
 import ContactForm from "./components/contact-form.js";
 import styled from "styled-components";
 import ContactInfo from "./components/contact-info.js";
+import { Fade } from "react-awesome-reveal";
 
 const onSubmit = async (formData) => {
   console.log(formData);
@@ -12,11 +13,19 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <TopSection>get in touch</TopSection>
-      <MidSection>
-        <ContactForm onSubmit={onSubmit} />
-        <ContactInfo />
-      </MidSection>
+      <TopSection>
+        <Fade duration={750} direction="down">
+          <div className=" border-b-[#1defe9ff] border-b-[3px]">
+            get in touch
+          </div>
+        </Fade>
+      </TopSection>
+      <Fade>
+        <MidSection>
+          <ContactForm onSubmit={onSubmit} />
+          <ContactInfo />
+        </MidSection>
+      </Fade>
       <Footer />
     </>
   );
@@ -28,8 +37,8 @@ const TopSection = styled.div`
   align-items: center;
   color: white;
   height: 300px;
-  font-size: 28px;
-  font-weight: bolder;
+  font-size: 40px;
+  font-weight: 800;
   text-transform: uppercase;
 `;
 

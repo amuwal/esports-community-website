@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Fade } from "react-awesome-reveal";
 
 export default function TopSection() {
   return (
@@ -12,9 +13,11 @@ export default function TopSection() {
         />
 
         <div className="absolute inset-0 flex justify-center items-center  left-1/2 -translate-x-1/2 top-1/2 transform -translate-y-1/2  max-w-[85vw] lg:w-[70%]">
-          <div className="text-white text-[40px] lg:text-[60px] text-center font-extrabold uppercase">
-            Become part of amazing Esport community
-          </div>
+          <Fade direction="down" duration={750}>
+            <div className="text-white text-[40px] lg:text-[60px] text-center font-extrabold uppercase">
+              Become part of amazing Esport community
+            </div>
+          </Fade>
         </div>
       </div>
     </>

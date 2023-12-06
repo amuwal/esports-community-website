@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -101,7 +102,6 @@ export default function MobileHeader() {
               <img className="h-[100%] w-auto" src="/dse-logo.png" alt="Logo" />
             </Link>
           </div>
-
           <div className="w-full pl-[5px] flex flex-col">
             <SidebarLink to={"/"}>home</SidebarLink>
             <SidebarLink to={"/events"}>Events</SidebarLink>

@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { Link, useMatch } from "react-router-dom";
 import styled from "styled-components";
 
@@ -45,23 +46,25 @@ export default function PcHeader() {
             <img className="h-[100%] w-auto" src="/dse-logo.png" alt="Logo" />
           </Link>
         </div>
-        <div className="flex gap-[5px]">
-          <HeaderLink to={"/"} isactive={useMatch("/")}>
-            home
-          </HeaderLink>
-          <HeaderLink to={"/events"} isactive={useMatch("/tournaments")}>
-            events
-          </HeaderLink>
-          <HeaderLink to={"/about"} isactive={useMatch("/about")}>
-            about
-          </HeaderLink>
-          <HeaderLink to={"/contact"} isactive={useMatch("/contact")}>
-            contact
-          </HeaderLink>
-        </div>
-        <div>
-          <HeaderButton>JOIN </HeaderButton>
-        </div>
+        <Fade cascade damping={0.13} triggerOnce>
+          <div className="flex gap-[5px]">
+            <HeaderLink to={"/"} isactive={useMatch("/")}>
+              home
+            </HeaderLink>
+            <HeaderLink to={"/events"} isactive={useMatch("/tournaments")}>
+              events
+            </HeaderLink>
+            <HeaderLink to={"/about"} isactive={useMatch("/about")}>
+              about
+            </HeaderLink>
+            <HeaderLink to={"/contact"} isactive={useMatch("/contact")}>
+              contact
+            </HeaderLink>
+          </div>
+          <div>
+            <HeaderButton>JOIN </HeaderButton>
+          </div>
+        </Fade>
       </div>
     </div>
   );

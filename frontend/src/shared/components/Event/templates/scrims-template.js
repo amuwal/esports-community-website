@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -5,44 +6,48 @@ export default function ScrimsTemplate({ event }) {
   return (
     <EventWrapper key={event.title}>
       <div className="h-[40%] w-full flex flex-col items-center gap-[10px]">
-        <img
-          className="w-90% rounded-lg object-cover transition-all hover:scale-101"
-          src={event.titleImage}
-          alt={event.title}
-        />
-        <div className="flex flex-col text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold justify-start flex-grow">
-          <div className=" border-b-[3px] border-b-[#1defe9ff] border-dotted">
-            {event.title}
+        <Fade cascade damping={0.1}>
+          <img
+            className="w-90% rounded-lg object-cover transition-all hover:scale-101"
+            src={event.titleImage}
+            alt={event.title}
+          />
+          <div className="flex flex-col text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold justify-start flex-grow">
+            <div className=" border-b-[3px] border-b-[#1defe9ff] border-dotted">
+              {event.title}
+            </div>
           </div>
-        </div>
+        </Fade>
       </div>
 
       <div className="h-[40%] flex flex-col items-center justify-evenly mb-[2.3%]">
         <div className="flex w-full justify-evenly">
-          <div className="  flex flex-col items-center">
-            <div className="text-[18px] text-white font-bold uppercase">
-              {event.entry || "Free"}
+          <Fade cascade damping={0.1}>
+            <div className="  flex flex-col items-center">
+              <div className="text-[18px] text-white font-bold uppercase">
+                {event.entry || "Free"}
+              </div>
+              <div className="text-[11px] text-gray-300 font-bold uppercase">
+                Entry
+              </div>
             </div>
-            <div className="text-[11px] text-gray-300 font-bold uppercase">
-              Entry
+            <div className="  flex flex-col items-center">
+              <div className="text-[18px] text-white font-bold uppercase">
+                {event.frequency || "Daily"}
+              </div>
+              <div className="text-[11px] text-gray-300 font-bold uppercase">
+                Frequency
+              </div>
             </div>
-          </div>
-          <div className="  flex flex-col items-center">
-            <div className="text-[18px] text-white font-bold uppercase">
-              {event.frequency || "Daily"}
+            <div className="  flex flex-col items-center">
+              <div className="text-[18px] text-white font-bold uppercase">
+                {event.matches || 3}
+              </div>
+              <div className="text-[11px] text-gray-300 font-bold uppercase">
+                Matches
+              </div>
             </div>
-            <div className="text-[11px] text-gray-300 font-bold uppercase">
-              Frequency
-            </div>
-          </div>
-          <div className="  flex flex-col items-center">
-            <div className="text-[18px] text-white font-bold uppercase">
-              {event.matches || 3}
-            </div>
-            <div className="text-[11px] text-gray-300 font-bold uppercase">
-              Matches
-            </div>
-          </div>
+          </Fade>
         </div>
         <div className="w-full">
           <WatchButton to={"/events/regular/" + event._id}>

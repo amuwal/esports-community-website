@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 
 const Event = styled.div`
   width: 100%;
@@ -16,45 +17,47 @@ const Event = styled.div`
 export default function TopEvent({ event }) {
   return (
     <>
-      <Event key={event._id}>
-        <Link
-          to={
-            event.type === "ONETIME"
-              ? "/events/" + event._id
-              : "/events/regular/" + event._id
-          }
-          className="w-full h-[65%]"
-        >
-          <img
-            className="h-full w-full rounded-tr-[16px] rounded-tl-[16px] object-cover"
-            src={event.titleImage}
-            alt={event.title}
-          />
-        </Link>
-        <div className="flex justify-between items-center">
-          <div className="p-[25px] h-[35%] flex flex-col items-start justify-center font-semibold text-white uppercase">
-            <a
-              className="hover:text-blue-400"
-              href={event.discord_channel_link}
-            >
-              {event.title}
-            </a>
-            <div className="text-gray-300 text-sm">{event.frequency}</div>
-          </div>
-          <a
-            href={event.discord_channel_link || "https://discord.com"}
-            target="_blank"
-            rel="noreferrer"
-            className="cursor-pointer h-[35px] mr-[25px]"
+      <Fade duration={750}>
+        <Event key={event._id}>
+          <Link
+            to={
+              event.type === "ONETIME"
+                ? "/events/" + event._id
+                : "/events/regular/" + event._id
+            }
+            className="w-full h-[65%]"
           >
             <img
-              className=" bg-white h-full w-auto rounded-full p-[5px] rotate-[-30deg]"
-              src="/arrow.png"
-              alt="go"
+              className="h-full w-full rounded-tr-[16px] rounded-tl-[16px] object-cover"
+              src={event.titleImage}
+              alt={event.title}
             />
-          </a>
-        </div>
-      </Event>
+          </Link>
+          <div className="flex justify-between items-center">
+            <div className="p-[25px] h-[35%] flex flex-col items-start justify-center font-semibold text-white uppercase">
+              <a
+                className="hover:text-blue-400"
+                href={event.discord_channel_link}
+              >
+                {event.title}
+              </a>
+              <div className="text-gray-300 text-sm">{event.frequency}</div>
+            </div>
+            <a
+              href={event.discord_channel_link || "https://discord.com"}
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer h-[35px] mr-[25px]"
+            >
+              <img
+                className=" bg-white h-full w-auto rounded-full p-[5px] rotate-[-30deg]"
+                src="/arrow.png"
+                alt="go"
+              />
+            </a>
+          </div>
+        </Event>
+      </Fade>
     </>
   );
 }
