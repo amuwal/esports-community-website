@@ -5,7 +5,7 @@ import styled from "styled-components";
 export default function DefaultTemplate({ event }) {
   return (
     <EventWrapper key={event.title}>
-      <div className="h-[40%] w-full flex items-center gap-[25px]">
+      <div className="chakra-peth h-[40%] w-full flex items-center gap-[25px]">
         <Fade  cascade damping={0.1}>
           <img
             className="w-[100px] min-[400px]:w-[100px] md:w-[120px] h-[auto] transition-all hover:scale-105"
@@ -25,7 +25,7 @@ export default function DefaultTemplate({ event }) {
         </Fade>
       </div>
 
-      <div className="relative h-[25px] rounded-md bg-gray-600 flex items-center justify-center">
+      <div className="chakra-peth relative h-[25px] rounded-md bg-gray-600 flex items-center justify-center">
         <div className="absolute left-2 top-1/2 -translate-y-1/2">
           <img
             src="https://assets-global.website-files.com/64c79ee268baad8314427a80/64c7ebf5a2b0471f6962c391_info.svg"
@@ -37,7 +37,7 @@ export default function DefaultTemplate({ event }) {
         </div>
       </div>
 
-      <div className="h-[50%] flex flex-col items-center justify-evenly">
+      <div className=" chakra-peth h-[50%] flex flex-col items-center justify-evenly">
         <div className="flex w-full justify-evenly">
           <Fade cascade damping={0.1}>
             <div className="  flex flex-col items-center">

@@ -1,7 +1,7 @@
 export default function ContactInfo() {
   return (
     <>
-      <div className="flex flex-col px-[20px] lg:px-[40px] py-[40px] w-[90vw] lg:flex-row items-center justify-center flex-grow gap-[25px] lg:gap-[40px] bg-gray-700">
+      <div className="chakra-peth flex flex-col px-[20px] lg:px-[40px] py-[40px] w-[90vw] lg:flex-row items-center justify-center flex-grow gap-[25px] lg:gap-[40px] bg-gray-700">
         <div className="flex items-center  w-[300px]  max-w-[90vw] lg:w-[unset] gap-[15px] text-white">
           <div>
             <img

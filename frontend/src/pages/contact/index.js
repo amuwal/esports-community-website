@@ -15,7 +15,7 @@ export default function Contact() {
       <Header />
       <TopSection>
         <Fade duration={750} direction="down">
-          <div className=" border-b-[#1defe9ff] border-b-[3px]">
+          <div className="chakra-peth border-b-[#1defe9ff] border-b-[3px]">
             get in touch
           </div>
         </Fade>

@@ -19,10 +19,10 @@ export default function Events() {
     <>
       <div className="my-[100px] text-center">
         <Fade direction="down" duration={500}>
-          <div className=" events-heading text-[36px] text-center text-white uppercase font-extrabold">
+          <div className="chakra-peth events-heading text-[36px] text-center text-white uppercase font-extrabold">
             Events
           </div>
-          <div className="events-heading text-[12px] text-center text-gray-400 font-bold uppercase">
+          <div className=" chakra-peth events-heading text-[12px] text-center text-gray-400 font-bold uppercase">
             Best of the events organized by us
           </div>
         </Fade>

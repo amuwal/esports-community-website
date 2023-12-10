@@ -72,7 +72,7 @@ export default function MobileHeader() {
   const [sidebarActive, setSidebarActive] = useState(false);
   return (
     <>
-      <div className="flex lg:hidden">
+      <div className="chakra-peth flex lg:hidden">
         <div className="my-[20px] mx-[30px] h-[80px] w-full flex items-center justify-between sm:mx-[80px]">
           <div className="h-full">
             <Link to={"/"}>

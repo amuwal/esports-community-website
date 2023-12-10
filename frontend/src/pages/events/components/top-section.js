@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function TopSection({ events }) {
   return (
-    <div className="w-full flex flex-col items-center px-[20px]">
+    <div className="chakra-peth w-full flex flex-col items-center px-[20px]">
       <div className="text-white flex flex-col gap-[5px] font-extrabold uppercase text-[40px] mt-[100px] mb-[90px] text-center">
         <Fade direction="down" duration={750}>
           <div>Scrims and Tournaments</div>

@@ -6,7 +6,7 @@ export default function MidSection({ event }) {
   return (
     <>
       <Fade >
-        <div className="my-[150px] px-[20px] lg:px-[80px] flex flex-col gap-[40px]">
+        <div className="chakra-peth my-[150px] px-[20px] lg:px-[80px] flex flex-col gap-[40px]">
           <div className="grid grid-cols-2 lg:grid-cols-4 rounded-xl bg-[white]">
             <div className="border-r-[3px] border-b-[3px] border-b-[#05152f] border-r-[#05152f] flex items-center justify-center h-[100px]">
               <div className="flex flex-col items-center justify-center ">

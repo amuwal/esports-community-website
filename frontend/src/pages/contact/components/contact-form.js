@@ -31,7 +31,7 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="grid md:grid-cols-2 row w-[90vw] md:w-[700px] lg:w-[800px] gap-[20px] flex-grow border py-[80px] px-[20px] sm:px-[40px] rounded-xl"
+        className="chakra-peth grid md:grid-cols-2 row w-[90vw] md:w-[700px] lg:w-[800px] gap-[20px] flex-grow border py-[80px] px-[20px] sm:px-[40px] rounded-xl"
       >
         <ContactInput
           name="name"

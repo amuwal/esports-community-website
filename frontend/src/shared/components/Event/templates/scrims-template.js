@@ -13,7 +13,7 @@ export default function ScrimsTemplate({ event }) {
             alt={event.title}
           />
           <div className="flex flex-col text-white uppercase min-[320px]:text-[14px] min-[400px]:text-[18px] sm:text-[16px] md:text-[20px] lg:text-[17px] xl:text-[22px] 2xl:text-[24px] font-bold justify-start flex-grow">
-            <div className=" border-b-[3px] border-b-[#1defe9ff] border-dotted">
+            <div className=" chakra-peth border-b-[3px] border-b-[#1defe9ff] border-dotted">
               {event.title}
             </div>
           </div>
@@ -23,7 +23,7 @@ export default function ScrimsTemplate({ event }) {
       <div className="h-[40%] flex flex-col items-center justify-evenly mb-[2.3%]">
         <div className="flex w-full justify-evenly">
           <Fade cascade damping={0.1}>
-            <div className="  flex flex-col items-center">
+            <div className="chakra-peth flex flex-col items-center">
               <div className="text-[18px] text-white font-bold uppercase">
                 {event.entry || "Free"}
               </div>
@@ -31,7 +31,7 @@ export default function ScrimsTemplate({ event }) {
                 Entry
               </div>
             </div>
-            <div className="  flex flex-col items-center">
+            <div className="chakra-peth flex flex-col items-center">
               <div className="text-[18px] text-white font-bold uppercase">
                 {event.frequency || "Daily"}
               </div>
@@ -39,7 +39,7 @@ export default function ScrimsTemplate({ event }) {
                 Frequency
               </div>
             </div>
-            <div className="  flex flex-col items-center">
+            <div className="chakra-peth flex flex-col items-center">
               <div className="text-[18px] text-white font-bold uppercase">
                 {event.matches || 3}
               </div>
@@ -49,7 +49,7 @@ export default function ScrimsTemplate({ event }) {
             </div>
           </Fade>
         </div>
-        <div className="w-full">
+        <div className="w-full chakra-peth">
           <WatchButton to={"/events/regular/" + event._id}>
             More Details
           </WatchButton>

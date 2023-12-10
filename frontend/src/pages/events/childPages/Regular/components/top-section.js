@@ -1,7 +1,7 @@
 export default function TopSection({ event }) {
   return (
     <>
-      <div className="flex flex-col gap-[20px] items-center justify-center my-[60px] uppercase">
+      <div className="chakra-peth flex flex-col gap-[20px] items-center justify-center my-[60px] uppercase">
         <div className="text-white text-center text-[40px] md:text-[50px] lg:text-[70px] font-extrabold">
           {event.title}
         </div>

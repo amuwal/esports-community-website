@@ -30,7 +30,7 @@ export default function Footer() {
   return (
     <Fade>
       <FooterWrapper>
-        <div className="flex flex-col gap-[70px] col-span-1 min-[500px]:col-span-2 sm:col-span-1">
+        <div className="chakra-peth flex flex-col gap-[70px] col-span-1 min-[500px]:col-span-2 sm:col-span-1">
           <Link to={"/"}>
             <img className="w-[100px] h-auto" src="/dse-logo.png" alt="DSE" />
           </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-[25px] pt-[25px]">
+        <div className="chakra-peth flex flex-col gap-[25px] pt-[25px]">
           <div className=" text-white font-bold uppercase text-[18px]">
             pages
           </div>
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-[20px] pt-[25px] min-w-[200px]">
+        <div className="chakra-peth flex flex-col gap-[20px] pt-[25px] min-w-[200px]">
           <div className="text-white font-bold uppercase text-[18px]">
             get in touch
           </div>

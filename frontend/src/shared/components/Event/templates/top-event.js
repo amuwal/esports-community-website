@@ -25,7 +25,7 @@ export default function TopEvent({ event }) {
                 ? "/events/" + event._id
                 : "/events/regular/" + event._id
             }
-            className="w-full h-[65%]"
+            className="w-full h-[65%] chakra-peth "
           >
             <img
               className="h-full w-full rounded-tr-[16px] rounded-tl-[16px] object-cover"

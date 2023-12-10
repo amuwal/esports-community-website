@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <div className="mb-[200px]">
+      <div className="mb-[200px] chakra-peth ">
         <TopSection />
         <AboutInfo />
         <Achievements />

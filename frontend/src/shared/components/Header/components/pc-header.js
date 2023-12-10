@@ -5,15 +5,18 @@ import styled from "styled-components";
 const HeaderLink = styled(Link)`
   padding: 12px 20px;
   border-radius: 5px;
-  color: white;
+  color: ${(props) =>
+    props.isactive ? "black" : "white"};;
   font-size: 16px;
   line-height: 17px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: ${(props) => (props.isactive ? "#5d6af2" : "transparent")};
+  background-color: ${(props) =>
+    props.isactive ? "#1defe9ff" : "transparent"};
 
   &:hover {
-    background-color: #5d6af2;
+    color: black;
+    background-color: #1defe9ff;
   }
 `;
 
@@ -23,8 +26,8 @@ const HeaderButton = styled.button`
   align-items: center;
   justify-content: center;
   width: 160px;
-  color: white;
-  background-color: #5d6af2;
+  color: black;
+  background-color: #1defe9ff;
   border-radius: 5px;
   transition: all 0.2s ease;
   font-size: 16px;
@@ -39,7 +42,7 @@ const HeaderButton = styled.button`
 
 export default function PcHeader() {
   return (
-    <div className="hidden lg:flex">
+    <div className="chakra-peth hidden lg:flex">
       <div className="my-[20px] mx-[80px] h-[80px] w-full flex items-center justify-between">
         <div className="h-full">
           <Link to={"/"}>

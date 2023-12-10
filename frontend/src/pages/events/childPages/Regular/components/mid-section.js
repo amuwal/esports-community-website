@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function MidSection({ event }) {
   return (
     <>
-      <div className="my-[150px] px-[20px] lg:px-[80px] flex flex-col gap-[40px]">
+      <div className="chakra-peth my-[150px] px-[20px] lg:px-[80px] flex flex-col gap-[40px]">
         <div className="grid grid-cols-1 lg:grid-cols-3 rounded-xl bg-[white]">
           <div className="border-r-[3px] border-b-[3px] border-b-[#05152f] border-r-[#05152f] rounded-tr-xl flex items-center justify-center h-[100px]">
             <div className="flex flex-col items-center justify-center ">
