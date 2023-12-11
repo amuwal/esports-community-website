@@ -54,8 +54,8 @@ const SidebarButton = styled.button`
   align-items: center;
   justify-content: center;
   width: 160px;
-  color: white;
-  background-color: #5d6af2;
+  color: black;
+  background-color: #1defe9ff;
   border-radius: 5px;
   transition: all 0.2s ease;
   font-size: 16px;

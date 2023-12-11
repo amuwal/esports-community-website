@@ -41,7 +41,7 @@ export default function TopSection() {
             </div>
           </Fade>
           <Fade>
-            <div className="flex gap-[30px]">
+            <div className="flex flex-col md:flex-row gap-[30px] ">
               <CoolButton $fill={true}>join now</CoolButton>
               <CoolButton $fill={false}>Know more</CoolButton>
             </div>

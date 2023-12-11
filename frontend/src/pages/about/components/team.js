@@ -19,7 +19,7 @@ export default function Team() {
       <div>
         <div className="flex items-center justify-center my-[100px]">
           <Fade direction="down" duration={750}>
-            <div className=" capitalize text-[36px] font-extrabold text-white border-b-[3px] border-b-[#5d6af2ff]">
+            <div className=" capitalize text-[36px] font-extrabold text-white border-b-[3px] border-b-[#1defe9ff]">
               meet our team
             </div>
           </Fade>

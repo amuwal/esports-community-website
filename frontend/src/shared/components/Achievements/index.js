@@ -14,10 +14,10 @@ export default function Achievements() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-[80px]  mx-[35px] lg:mx-[100px] my-[100px] lg:my-[200px] lg:mt-[120px]">
+    <div className="flex flex-col gap-[80px]  mx-[35px] lg:mx-[100px] my-[80px] md:my-[100px] lg:my-[200px] lg:mt-[120px]">
       <Fade direction="down" duration={500}>
         <div className="chakra-peth achievements-heading flex justify-center  items-center">
-          <div className=" text-[36px] text-center text-white uppercase font-extrabold border-b-[3px] border-b-[#1defe9ff]">
+          <div className=" text-[36px] text-center text-white uppercase font-extrabold md:border-b-[3px] md:border-b-[#1defe9ff]">
             Join the community
           </div>
         </div>

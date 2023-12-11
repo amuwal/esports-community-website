@@ -6,7 +6,7 @@ export default function AboutInfo() {
       <div className="flex items-center gap-[25px] max-[820px]:flex-col  max-[820px]:gap-[40px] justify-evenly py-[50px] px-[20px] lg:px-[40px]">
         <div className="flex flex-col gap-[25px] w-[50%] max-[820px]:w-[75%] max-[650px]:w-[85%]">
           <Fade duration={750} cascade damping={0.2}>
-            <div className="text-[#5d6af2ff] font-extrabold text-[32px] uppercase">
+            <div className="text-[#1defe9ff] font-extrabold text-[32px] uppercase">
               about dark side community
             </div>
             <div className="text-gray-400 flex flex-col gap-[25px]">
@@ -25,7 +25,7 @@ export default function AboutInfo() {
           </Fade>
         </div>
         <div>
-          <Fade duration={750} >
+          <Fade duration={750}>
             <img
               className="w-[400px] h-auto max-w-[80vw]"
               src="https://cdn.dribbble.com/users/4875059/screenshots/11518606/media/06efc931206386ac562ff0c967bf446e.png?resize=800x600&vertical=center"
